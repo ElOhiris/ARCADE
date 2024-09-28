@@ -1,0 +1,110 @@
+/*
+Se non si conosce bene il linguaggio dei CSS, evitare di 
+intervenire sulle righe non commentate.
+Per maggiori informazioni:
+vedi "Modifiche al microsito" nella pagina delle specifiche del progetto
+*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #000;                  /* colore sfondo pagina */
+  font-family: Arial, Helvetica, sans-serif; /* font testo */
+  font-size: 14px;                           /* altezza di base del testo */
+  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+canvas {
+  display: block;
+}
+
+#pulsante-info, #pulsante-audio { 
+  background-color: transparent; /* colore sfondo */
+  color: #fff;                   /* colore icone */
+  text-shadow: 0 0 3px black;    /* ombra icone */
+  font-size: 20px;               /* altezza icone */
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 12px 18px;
+  border: none;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#pulsante-audio {
+  right: auto;
+  left: 0;
+}
+
+#pannello-info {
+  background-color: rgba(0,0,0,.85); /* colore sfondo */
+  color: #fff;                       /* colore testo */
+  
+  position: absolute;
+  left: 0;
+  top: 100%;
+  right: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  transition: all 0.3s ease 0s;
+  z-index: 1;
+}
+
+#pannello-info.aperto {
+  top: 0;
+  transition: all 0.6s ease 0s;
+}
+
+#pannello-info article {
+  max-width: 600px; /* larghezza massima della descrizione */
+
+  width: 100%;
+  padding: 24px;
+}
+
+#pannello-info article > * {
+  margin: 10px 0; 
+}
+
+#pannello-info h1 {
+  font-size: 20px; /* altezza titolo principale */
+}
+
+#pannello-info hr {
+  border: none;
+
+  border-top: 1px solid rgba(255,255,255,.25); /* stile linea separatrice */
+}
+
+#pannello-info p {
+  line-height: 1.33;
+}
+
+#pannello-info a { 
+  color: #fc4; /* colore dei link */
+  
+  text-decoration: none;
+}
+
+#pannello-info a:hover {
+  color: #ff0; /* colore link evidenziato */
+}

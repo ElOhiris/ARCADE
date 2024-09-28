@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- impostazioni base e inclusione file principali -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" type="text/css" href="microsito.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+  <script src="https://p5play.org/v3/planck.min.js"></script>
+  <script src="https://p5play.org/v3/p5play.js"></script>
+
+  <!-- informazioni minime per i motori di ricerca -->
+  <title>ARCADE</title>
+  <meta name="Un tuffo nel passato" content="Un minigioco ispirato ai giochi arcade e alla musica in 8-bit che evoca tempi passati, quando i videogiochi arcade erano solo nelle sale giochi e non si sapeva cosa sarebbero diventati." />
+  <!-- informazioni minime per la condivisione sui social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ARCADE. A long pixel story." />
+  <meta property="og:description" content="Un minigioco ispirato ai giochi arcade e alla musica in 8-bit che evoca tempi passati, quando i videogiochi arcade erano solo nelle sale giochi e non si sapeva cosa sarebbero diventati. Muoviti tra i pixel per uscire dal labirinto, ma attenzione a loro piace saltare." />
+  <meta property="og:url" content="https://editor.p5js.org/eleonora.dr16/full/lJui_1EvL" />
+  <meta property="og:image" content="https://preview.p5js.org/eleonora.dr16/sketches/lJui_1EvL/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+
+<body>
+
+  <!-- informazioni visualizzate al clic sul pulsante (?) -->
+  <div id="pannello-info">
+    <article>
+      <h1>ARCADE</h1>
+      <p>Eleonora Rossi</p>
+      <hr>
+      <p>Un tuffo nel passato </p>
+      <p>Un minigioco ispirato ai giochi arcade e alla musica in 8-bit che evoca tempi passati, quando i videogiochi arcade erano solo nelle sale giochi e non si sapeva cosa sarebbero diventati.</p>
+      <p>INTERAZIONE: MOUSE muove la palla contro i quadrati</p>
+      <hr>
+      <p>Audio: 
+        <a href="https://URLDELBRANO1/" target="_blank">"Pixel_song"</a>https://pixabay.com/it/sound-effects/026491-pixel-song-8-72675/
+      </p>
+    </article>
+  </div>
+
+  <!-- pulsanti audio e informazioni -->
+  <button id="pulsante-audio" onclick="attivaDisattivaAudio()"><span class="lnr lnr-volume-high"></span></button>
+  <button id="pulsante-info" onclick="apriChiudiInfo()"><span class="lnr lnr-question-circle"></span></button>
+
+  <!-- inclusione altri script e sketch.js -->
+  <script src="microsito.js"></script>
+  <script src="sketch.js"></script>
+
+</body>
+
+</html>
